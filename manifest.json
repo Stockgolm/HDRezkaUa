@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "HDRezkaUa",
+  "version": "1.0",
+  "icons": {
+    "128": "rezka.ag.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.rezka.ag/*"],
+      "js": ["background.js"]
+    }
+  ],
+  "permissions": ["webRequest", "webRequestBlocking", "*://*.rezka.ag/*"]
+}
